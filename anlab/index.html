@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.css" rel="stylesheet">
-	<link href="js/modal.js">
+	
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -129,30 +129,37 @@
     </div> 
 	 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	<div class="carousel-inner" >
-        <div class="item active" style= "background-image:url('any.png'); height:700px">
+        <div class="item active" style= "background-image:url('any.png'); height:500px">
          
-          <div class="container">
-            
-        </div>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+          
+	
+		
+		
 		<center><h1 style="color:#FFFFFF;font-size:76px;line-height:2">In the Kitchen</h1></center>
         
-      <img src="arrowdown.png">
+    
       </div>
      
     </div> 
+	
+	
+	
+	
 	<div class="container marketing">
-	<center><h1 style="color:#CFCFCF;font-size:76px;line-height:2">Cafe Geeks and Freaks</h1></center>
-<!--	<center><h1 style="color:#CFCFCF;font-size:76px">Cafe Geeks and Freaks</h1></center>
-<center> <a href="#news" data-toggle="modal" class="thumbnail chan"><h2 style="font-family:Pragmatica;color:#00FF55;font-size:76px"><strong>UCF</strong></h2></a></center>
+	<br/>
+<!--	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Foods And Flavours</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Cafe Geeks and Freaks</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">FMCG Delivery</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Co Working Spaces</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Our Startup Incubator</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Business Consulting</h1></center> -->
+
+<a href="#news" data-toggle="modal fade"><h2 style="font-family:Pragmatica;color:#00FF55;font-size:48px"><strong>UCF</strong></h2></a>
  
-                 <div id="news" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+                 <div id="news" class="modal-hide-dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
   <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h2 id="myModalLabel6"style="font-family:Pragmatica">UCF</h2>
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h2 class="modal-title"style="font-family:Pragmatica">UCF</h2>
   </div>
   <div class="modal-body">
    
@@ -164,13 +171,16 @@
 
   </div>
   <div class="modal-footer">
-    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+  <!--  <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>-->
+	 <button type="button" class="btn btn-default" data-dismiss="modal">Nice!</button>
   </div>
 </div>
 <br/><br/>
-</div>
--->
-<div class="modal fade">
+  
+ 
+ <!--
+ 
+ <a href="#news" class="modal fade"><h2 style="font-family:Pragmatica;color:#00FF55;font-size:48px"><strong>UCF</strong></h2></a>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -178,7 +188,33 @@
         <h4 class="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body&hellip;</p>
+        <p style="font-family:Arial, Helvetica, sans-serif;font-size:24px;"> Menus for special events should be just that:Special.</p>
+ 
+ <a href="">dig more on this</a>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!-- Modal -->
+<a href="#my" data-toggle="modal"><h2 style="font-family:Pragmatica;color:#00FF55;font-size:48px"><strong>UCF</strong></h2></a>
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="my" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -238,8 +274,42 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../docs-assets/js/holder.js"></script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1930971-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+  </script>
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
   </body>
 </html>
